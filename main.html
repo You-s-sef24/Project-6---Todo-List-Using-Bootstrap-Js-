@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="text-light bg-primary">
+  <h1 style="font-weight: bold;" class="d-flex align-items-center justify-content-center mt-5">Todo List</h1>
+  <div class="container mt-5">
+    <div class="error row"></div>
+    <div class="row d-flex align-items-center justify-content-between mb-5">
+      <div class="col-5 p-0">
+        <input placeholder="To do" type="text" class="inp form-control" onkeydown="
+        if(event.key==='Enter')
+        add();
+        ">
+      </div>
+      <div class="col-5 ms-3 p-0">
+        <input type="date" class="me-3 inp-date form-control">
+      </div>
+      <div class="col-1 p-0">
+        <button style="width: 70px;" class="btn btn-success" onclick="
+          add();
+          ">Add</button>
+      </div>
+    </div>
+    <div class="list "></div>
+  </div>
+  
+  </div>
+  </div>
+
+
+
+
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
